@@ -12,7 +12,7 @@ export default function Intro() {
           understanding.
         </p>
 
-        <a href="#services" className="button">
+        <a href="#services" className="button light">
           Nossos serviços
         </a>
       </div>

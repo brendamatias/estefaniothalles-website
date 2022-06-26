@@ -33,7 +33,7 @@ export default function Header() {
             <a
               href="https://api.whatsapp.com/send?phone=5531993500702&text=Olá,%20vim%20através%20do%20seu%20site"
               target="_blank"
-              className="button"
+              className="button light"
               rel="noreferrer"
             >
               Contato

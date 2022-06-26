@@ -47,13 +47,34 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .button {
-    color: #D1AB00;
     border-radius: 6px;
-    background-color: #ffffff;
     padding: 16px 26px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
+    color: #ffffff;
+    background-color: #D1AB00;
+
+    &.light {
+      color: #D1AB00;
+      background-color: #ffffff;
+    }
+  }
+
+  .title-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #D1AB00;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    svg {
+      font-size: 24px;
+    }
   }
 `;
 
