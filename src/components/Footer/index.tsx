@@ -43,22 +43,30 @@ export default function Footer() {
               <span>Contato</span>
 
               <ul>
-                <li>estefanio@estefanio</li>
-                <li>+ 55 81 99999999</li>
-                <li>@estefani</li>
+                <li>estefaniothalles@gmail.com</li>
+                <li>+55 31 99350-0702</li>
               </ul>
             </div>
           </div>
 
           <div className="footer-icons">
             <div>
-              <FaFacebookF />
+              <a
+                href="https://www.linkedin.com/in/estefanio-thalles-a72241215/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
             </div>
             <div>
-              <FaLinkedinIn />
-            </div>
-            <div>
-              <FaInstagram />
+              <a
+                href="https://www.instagram.com/estefaniothalles/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram />
+              </a>
             </div>
           </div>
         </FooterInfo>

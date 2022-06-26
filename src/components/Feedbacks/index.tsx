@@ -7,7 +7,7 @@ import { Container, Cards } from './styles';
 export default function Feedbacks() {
   const feedbacks = [
     {
-      name: 'Juliana Teste',
+      name: 'Brenda Matias',
       role: 'Teste',
       text: 'Lorem ipusm is simply dummy text of the printing and typesetting and lorem is ipusm is simply dummy text of the printing and typesetting',
     },

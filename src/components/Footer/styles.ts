@@ -19,7 +19,7 @@ export const FooterInfo = styled.footer`
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 100px;
+    grid-gap: 80px;
 
     img {
       width: 170px;

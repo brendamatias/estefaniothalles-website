@@ -115,7 +115,7 @@ export default function Services() {
               className="button light"
               rel="noreferrer"
             >
-              Contate
+              Contato
             </a>
           </div>
         </div>
