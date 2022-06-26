@@ -105,7 +105,6 @@ export const Cards = styled.div`
   > div {
     display: flex;
     gap: 20px;
-    width: 353px;
     height: 100%;
 
     .card-icon {
