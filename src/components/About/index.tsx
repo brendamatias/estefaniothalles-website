@@ -38,7 +38,7 @@ export default function About() {
           ))}
         </Cards>
 
-        <div className="about-header">
+        <div className="about-header" id="about">
           <h3>Lorem ipsum is simply dummy text of</h3>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting.

@@ -3,7 +3,7 @@ import { MdCheck } from 'react-icons/md';
 import { BsLightningFill } from 'react-icons/bs';
 import { RiUser5Line } from 'react-icons/ri';
 
-import { Container, Intro, Cards } from './styles';
+import { Container, Intro, Cards, ContactInfo } from './styles';
 
 export default function Services() {
   const cards = [
@@ -34,7 +34,7 @@ export default function Services() {
   ];
 
   return (
-    <Container>
+    <Container id="services">
       <div className="container">
         <Intro>
           <div>
@@ -98,6 +98,28 @@ export default function Services() {
           ))}
         </Cards>
       </div>
+      <ContactInfo>
+        <div className="container">
+          <div>
+            <h1>
+              Lorem ipusm is simply dummy text of the printing and typesetting?
+            </h1>
+            <span>
+              Lorem ipusm is simply dummy text of the printing and typesetting
+            </span>
+          </div>
+          <div>
+            <a
+              href="https://api.whatsapp.com/send?phone=5531993500702&text=Olá,%20vim%20através%20do%20seu%20site"
+              target="_blank"
+              className="button light"
+              rel="noreferrer"
+            >
+              Contate
+            </a>
+          </div>
+        </div>
+      </ContactInfo>
     </Container>
   );
 }

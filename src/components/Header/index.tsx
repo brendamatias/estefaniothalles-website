@@ -13,7 +13,7 @@ export default function Header() {
       label: 'Serviços',
     },
     {
-      id: 'feedback',
+      id: 'feedbacks',
       label: 'Feedbacks',
     },
   ];

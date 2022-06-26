@@ -14,7 +14,7 @@ export default function Footer() {
       label: 'Serviços',
     },
     {
-      id: 'feedback',
+      id: 'feedbacks',
       label: 'Feedbacks',
     },
   ];

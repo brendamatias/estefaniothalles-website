@@ -26,17 +26,18 @@ export const Container = styled.section`
     }
 
     > h1 {
-      font-weight: 800;
+      font-weight: 600;
       font-size: 72px;
       line-height: 80px;
       letter-spacing: -2px;
       color: #ffffff;
       margin-bottom: 10px;
+      max-width: 700px;
     }
 
     > p {
       max-width: 400px;
-      font-weight: 400;
+      font-weight: 300;
       font-size: 16px;
       line-height: 32px;
       color: rgba(255, 255, 255, 0.95);

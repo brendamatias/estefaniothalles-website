@@ -7,6 +7,9 @@ const GlobalStyle = createGlobalStyle`
     outline: 0;
     box-sizing: border-box;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 
   *:focus {
     outline: 0;
@@ -61,6 +64,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 14px;
     color: #ffffff;
     background-color: #D1AB00;
+    letter-spacing: 1px;
 
     &.light {
       color: #D1AB00;

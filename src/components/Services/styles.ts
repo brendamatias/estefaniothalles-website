@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  padding: 90px 0;
+  padding-top: 90px;
 `;
 
 export const Intro = styled.div`
@@ -120,7 +120,7 @@ export const Cards = styled.div`
       > strong {
         display: block;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 32px;
         color: #2e2e2e;
       }
@@ -132,6 +132,32 @@ export const Cards = styled.div`
         line-height: 32px;
         color: #666666;
         margin-top: 6px;
+      }
+    }
+  }
+`;
+
+export const ContactInfo = styled.div`
+  background-color: #fed000;
+  margin-top: 90px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+
+    > div {
+      line-height: 32px;
+      font-weight: 700;
+
+      > h1 {
+        font-size: 24px;
+        color: #ffffff;
+      }
+
+      > span {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.8);
       }
     }
   }
