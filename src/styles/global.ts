@@ -40,6 +40,13 @@ const GlobalStyle = createGlobalStyle`
     -webkit-user-draggit: none
   }
 
+  hr {
+    border: 1px solid #FFF1B4;
+    background-color: #FFF1B4;
+    width: 1100px;
+    margin: 0 auto;
+  }
+
   .container {
     padding: 20px 0;
     max-width: 1100px;
@@ -48,7 +55,7 @@ const GlobalStyle = createGlobalStyle`
 
   .button {
     border-radius: 6px;
-    padding: 16px 26px;
+    padding: 16px 30px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
