@@ -39,6 +39,22 @@ const GlobalStyle = createGlobalStyle`
   img {
     -webkit-user-draggit: none
   }
+
+  .container {
+    padding: 20px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .button {
+    color: #D1AB00;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 16px 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+  }
 `;
 
 export default GlobalStyle;
