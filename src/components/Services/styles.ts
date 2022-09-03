@@ -18,6 +18,10 @@ export const Intro = styled.div`
       line-height: 64px;
       letter-spacing: -1px;
       color: #2e2e2e;
+
+      @media (max-width: 550px) {
+        font-size: 44px;
+      }
     }
 
     > span {

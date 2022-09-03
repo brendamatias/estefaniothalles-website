@@ -48,7 +48,7 @@ export default function Services() {
   return (
     <Container id="services">
       <div className="container">
-        <Intro>
+        <Intro data-aos="fade-right">
           <div>
             <div className="about-content">
               <strong className="title-section">
@@ -98,7 +98,7 @@ export default function Services() {
 
         <Cards>
           {cards.map(({ title, text, icon }) => (
-            <div>
+            <div data-aos="fade-up">
               <div className="card-icon">{icon}</div>
               <div>
                 <strong>{title}</strong>

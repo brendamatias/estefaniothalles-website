@@ -47,7 +47,7 @@ export default function Feedbacks() {
 
       <Cards>
         <div className="background" />
-        <ul className="container">
+        <ul className="container" data-aos="zoom-in-up">
           {feedbacks.map(({ name, role, text }) => (
             <li>
               <div>

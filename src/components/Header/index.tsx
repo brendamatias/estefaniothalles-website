@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <Nav>
       <div className="container">
-        <img src={logo} alt="Estefânio Thalles Logo" />
+        <img src={logo} alt="Estefanio Thalles Logo" />
         <button type="button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <FaBars />
         </button>

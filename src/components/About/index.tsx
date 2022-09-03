@@ -27,7 +27,7 @@ export default function About() {
   return (
     <Container>
       <div className="container">
-        <Cards>
+        <Cards data-aos="fade-up">
           {cards.map(({ title, text, icon }) => (
             <div key={title}>
               <div>
@@ -42,7 +42,7 @@ export default function About() {
         </Cards>
 
         <div className="about-header" id="about">
-          <h3>Atuando a mais de 10 anos como eletrecista</h3>
+          <h3>Atuando a mais de 10 anos como eletricista</h3>
           <p>
             Na hora de realizar uma obra ou manutenção na sua residência ou
             imóvel evite os riscos desnecessários, deixe o trabalho elétrico por
@@ -50,7 +50,7 @@ export default function About() {
           </p>
         </div>
 
-        <Content>
+        <Content data-aos="fade-up">
           <img src={aboutSrc} alt="Sobre" />
 
           <div>
@@ -61,7 +61,7 @@ export default function About() {
             <h1>Profissional qualificado</h1>
 
             <p>
-              Eletrecista desde 2012, Estêfanio Thalles tem formação em Elétrica
+              Eletricista desde 2012, Estêfanio Thalles tem formação em Elétrica
               Predial, NR10, Instalação de CFTV, Instalação de Central de
               Incêndio, Instalação de Sistemas de Segurança.
             </p>

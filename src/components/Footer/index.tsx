@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="container">
         <FooterInfo>
           <div className="content">
-            <img src={logo} alt="Estefânio Thalles Logo" />
+            <img src={logo} alt="Estefanio Thalles Logo" />
 
             <div>
               <div>

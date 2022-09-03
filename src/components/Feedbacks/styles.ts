@@ -17,8 +17,12 @@ export const Container = styled.section`
         text-align: center;
         letter-spacing: -1px;
         color: #2e2e2e;
-        width: 400px;
+        max-width: 400px;
         margin-bottom: 70px;
+      }
+
+      @media (max-width: 550px) {
+        font-size: 44px;
       }
     }
   }
