@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
   hr {
     border: 1px solid #FFF1B4;
     background-color: #FFF1B4;
-    width: 1100px;
+    width: 100%;
     margin: 0 auto;
   }
 

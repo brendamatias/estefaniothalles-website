@@ -8,7 +8,8 @@ export const Intro = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-gap: 100px;
+  grid-gap: 60px;
+  padding: 0 20px;
 
   .about-content {
     > h1 {
@@ -44,8 +45,8 @@ export const Intro = styled.div`
         font-size: 20px;
         color: #fff;
         background-color: #d1ab00;
-        width: 32px;
-        height: 32px;
+        min-width: 32px;
+        min-height: 32px;
       }
 
       > span {
@@ -60,7 +61,8 @@ export const Intro = styled.div`
 
     > div {
       padding: 20px 40px;
-      width: 391px;
+      max-width: 391px;
+      width: 100%;
       height: 176px;
       display: flex;
       flex-direction: column;
@@ -94,26 +96,43 @@ export const Intro = styled.div`
       border-radius: 0 0 6px 6px;
     }
   }
+
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+
+    .services-info-numbers {
+      margin: 0;
+    }
+  }
 `;
 
 export const Cards = styled.div`
   margin-top: 100px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 60px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: flex-start;
+  grid-gap: 40px;
+  padding: 0 20px;
 
   > div {
     display: flex;
+    align-items: flex-start;
     gap: 20px;
     height: 100%;
 
     .card-icon {
       background-color: #d1ab00;
       display: flex;
-      align-self: center;
+      align-items: center;
       justify-content: center;
-      padding: 10px;
       border-radius: 50%;
+      min-width: 60px;
+      min-height: 60px;
+
+      > svg {
+        font-size: 35px;
+        color: #fff;
+      }
     }
 
     > div {
@@ -140,11 +159,14 @@ export const Cards = styled.div`
 export const ContactInfo = styled.div`
   background-color: #fed000;
   margin-top: 90px;
+  padding: 0 20px;
 
   .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 50px 0;
+    gap: 40px;
 
     > div {
       line-height: 32px;

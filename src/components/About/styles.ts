@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  padding-bottom: 90px;
+  padding: 0 20px 90px 20px;
 
   .about-header {
     text-align: center;
@@ -9,7 +9,7 @@ export const Container = styled.section`
     > h3 {
       font-weight: 800;
       font-size: 36px;
-      line-height: 66px;
+      line-height: 40px;
       letter-spacing: -2px;
       color: #2e2e2e;
     }
@@ -28,44 +28,53 @@ export const Container = styled.section`
 export const Cards = styled.div`
   background-color: #fff;
   display: flex;
+  flex-wrap: wrap;
   box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.1);
   margin-top: -105px;
   border-radius: 6px;
   margin-bottom: 60px;
+  gap: 54px;
+  padding: 48px;
 
   > div {
-    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    align-items: flex-start;
 
-    > .card-icon {
-      background-color: #d1ab00;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 40px;
+    > div {
+      > .card-icon {
+        background-color: #d1ab00;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
 
-      svg {
-        font-size: 32px;
+        svg {
+          font-size: 32px;
+        }
       }
-    }
 
-    > strong {
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 32px;
-      color: #2e2e2e;
-    }
+      > strong {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #2e2e2e;
+      }
 
-    > p {
-      font-weight: 400;
-      font-size: 16px;
-      color: #666666;
-      line-height: 32px;
-      margin-top: 20px;
-      max-width: 294px;
+      > p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #666666;
+        line-height: 32px;
+        margin-top: 20px;
+        max-width: 294px;
+      }
     }
 
     > button {
@@ -82,9 +91,13 @@ export const Cards = styled.div`
 
 export const Content = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 100px;
   align-items: center;
+  grid-gap: 80px;
+  grid-template-columns: 1fr 1fr;
+
+  > img {
+    width: 100%;
+  }
 
   > div {
     > h1 {
@@ -93,14 +106,6 @@ export const Content = styled.div`
       line-height: 64px;
       letter-spacing: -1px;
       color: #2e2e2e;
-    }
-
-    > span {
-      display: block;
-      margin-top: 26px;
-      font-size: 20px;
-      line-height: 32px;
-      color: #3e3e3e;
     }
 
     > p {
@@ -112,5 +117,9 @@ export const Content = styled.div`
       line-height: 32px;
       color: #666666;
     }
+  }
+
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
   }
 `;

@@ -1,35 +1,47 @@
 import * as React from 'react';
-import { MdCheck } from 'react-icons/md';
+import {
+  MdCable,
+  MdCheck,
+  MdOfflineBolt,
+  MdSettingsInputComposite,
+} from 'react-icons/md';
 import { BsLightningFill } from 'react-icons/bs';
-import { RiUser5Line } from 'react-icons/ri';
+import { SiAdblock } from 'react-icons/si';
 
+import { FaFireExtinguisher, FaVideo } from 'react-icons/fa';
 import { Container, Intro, Cards, ContactInfo } from './styles';
 
 export default function Services() {
   const cards = [
     {
-      title: 'Residencial',
-      text: 'Lorem Ipsum is simply dummy text of the printing and typesetting.',
+      title: 'Sistema de segurança',
+      icon: <SiAdblock />,
+      text: 'Alarme e controle de acesso',
     },
     {
-      title: 'Residencial 2',
-      text: 'Lorem Ipsum is simply dummy text of the printing and typesetting.',
+      title: 'Sistema de combate a incêndio',
+      icon: <FaFireExtinguisher />,
+      text: 'Projeto e execução',
     },
     {
-      title: 'Residencial 3',
-      text: 'Lorem Ipsum is simply dummy text of the printing and typesetting.',
+      title: 'CFTV',
+      icon: <FaVideo />,
+      text: 'Instalação e reparos',
     },
     {
-      title: 'Residencial 4',
-      text: 'Lorem Ipsum is simply dummy text of the printing and typesetting.',
+      title: 'Disjuntores',
+      icon: <MdSettingsInputComposite />,
+      text: 'Instalação e troca',
     },
     {
-      title: 'Residencial 5',
-      text: 'Lorem Ipsum is simply dummy text of the printing and typesetting.',
+      title: 'Fiação Elétrica',
+      icon: <MdCable />,
+      text: 'Troca e dimensionamento correto',
     },
     {
-      title: 'Residencial 6',
-      text: 'Lorem Ipsum is simply dummy text of the printing and typesetting.',
+      title: 'Quadro Elétricos',
+      icon: <MdOfflineBolt />,
+      text: 'Confecção e reparos',
     },
   ];
 
@@ -43,10 +55,10 @@ export default function Services() {
                 <BsLightningFill />
                 Serviços
               </strong>
-              <h1>Lorem Ipsum Is Lorem Ipsum</h1>
+              <h1>Porque contratar um eletricista?</h1>
               <span>
-                Service range including technical skills, design, business
-                understanding.
+                Contratar um eletricista qualificado evita dores de cabeça e
+                evita problemas que poderiam colocar a vida de pessoas em risco.
               </span>
             </div>
 
@@ -55,41 +67,39 @@ export default function Services() {
                 <div className="icon">
                   <MdCheck />
                 </div>
-                <span>Range including technical skills</span>
+                <span>Menos dores de cabeça</span>
               </div>
               <div>
                 <div className="icon">
                   <MdCheck />
                 </div>
-                <span>Business understanding</span>
+                <span>Segurança em primeiro lugar</span>
               </div>
               <div>
                 <div className="icon">
                   <MdCheck />
                 </div>
-                <span>Partner on the long run</span>
+                <span>Instalações que seguem normas técnicas</span>
               </div>
             </div>
           </div>
 
           <div className="services-info-numbers">
             <div>
-              <strong>3+</strong>
+              <strong>10+</strong>
               <span>Anos de experiência</span>
             </div>
             <div>
-              <strong>73+</strong>
-              <span>Clientes atendidos com excelencia</span>
+              <strong>150+</strong>
+              <span>Clientes atendidos com excelência</span>
             </div>
           </div>
         </Intro>
 
         <Cards>
-          {cards.map(({ title, text }) => (
+          {cards.map(({ title, text, icon }) => (
             <div>
-              <div className="card-icon">
-                <RiUser5Line size={50} />
-              </div>
+              <div className="card-icon">{icon}</div>
               <div>
                 <strong>{title}</strong>
                 <span>{text}</span>
@@ -101,11 +111,10 @@ export default function Services() {
       <ContactInfo>
         <div className="container">
           <div>
-            <h1>
-              Lorem ipusm is simply dummy text of the printing and typesetting?
-            </h1>
+            <h1>Solicite já o seu orçamento!</h1>
             <span>
-              Lorem ipusm is simply dummy text of the printing and typesetting
+              É importante escolher um profissional com boas referencias
+              profissionais para garantir a qualidade da mão-de-obra
             </span>
           </div>
           <div>

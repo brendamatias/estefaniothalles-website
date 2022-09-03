@@ -6,6 +6,7 @@ export const Container = styled.section`
   .feedbacks-header {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 
     > div {
@@ -26,6 +27,8 @@ export const Container = styled.section`
 export const Cards = styled.section`
   position: relative;
   margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
 
   .background {
     position: absolute;
@@ -38,10 +41,12 @@ export const Cards = styled.section`
 
   > ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     box-shadow: -9px 15px 73px rgba(0, 0, 0, 0.25);
     background-color: #fff;
     border-radius: 6px;
+    margin: 0 20px;
 
     > li {
       padding: 35px 45px;
@@ -89,6 +94,12 @@ export const Cards = styled.section`
           }
         }
       }
+    }
+  }
+
+  @media (max-width: 650px) {
+    > ul {
+      grid-template-columns: 1fr;
     }
   }
 `;

@@ -10,6 +10,7 @@ export const Container = styled.section`
   background-position: bottom -65px right -10px;
   background-repeat: no-repeat;
   background-size: 600px;
+  padding: 0 20px;
 
   > div {
     width: 100%;
@@ -42,6 +43,19 @@ export const Container = styled.section`
       line-height: 32px;
       color: rgba(255, 255, 255, 0.95);
       margin-bottom: 80px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    background-size: 400px;
+    padding-bottom: 500px;
+    height: 100%;
+    padding-top: 160px;
+
+    > div {
+      > h1 {
+        font-size: 48px;
+      }
     }
   }
 `;

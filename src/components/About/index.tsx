@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { MdAddAPhoto } from 'react-icons/md';
 import { BsLightningFill } from 'react-icons/bs';
+import { FaBuilding, FaHome, FaShoppingCart } from 'react-icons/fa';
 import aboutSrc from '../../assets/images/about-image.png';
 
 import { Container, Cards, Content } from './styles';
@@ -9,15 +9,18 @@ export default function About() {
   const cards = [
     {
       title: 'Residencial',
-      text: 'Lorem Ipsum is simply dummy text of the printing and typesetting.',
+      text: 'Atendimento residencial que executam desde serviços simples como fiação elétrica, chuveiro elétrico, luminárias, tomadas, além de reestruturar o cabeamento elétrico de sua Residência.',
+      icon: <FaHome />,
     },
     {
       title: 'Comercial',
-      text: 'Lorem Ipsum is simply dummy text of the printing and typesetting.',
+      text: 'Trocas e/ou reparos de tomadas, interruptores e luminarias além de realizar todo tipo de instalações eletricas para a área interna e externa.',
+      icon: <FaShoppingCart />,
     },
     {
-      title: 'Sei lá',
-      text: 'Lorem Ipsum is simply dummy text of the printing and typesetting.',
+      title: 'Predial',
+      text: 'Elaboramos e executamos projetos eletricos de baixa tensão seguindo todas as normas regulamentadoras',
+      icon: <FaBuilding />,
     },
   ];
 
@@ -25,13 +28,13 @@ export default function About() {
     <Container>
       <div className="container">
         <Cards>
-          {cards.map(({ title, text }) => (
+          {cards.map(({ title, text, icon }) => (
             <div key={title}>
-              <div className="card-icon">
-                <MdAddAPhoto />
+              <div>
+                <div className="card-icon">{icon}</div>
+                <strong>{title}</strong>
+                <p>{text}</p>
               </div>
-              <strong>{title}</strong>
-              <p>{text}</p>
 
               <button type="button">Saber mais</button>
             </div>
@@ -39,11 +42,11 @@ export default function About() {
         </Cards>
 
         <div className="about-header" id="about">
-          <h3>Lorem ipsum is simply dummy text of</h3>
+          <h3>Atuando a mais de 10 anos como eletrecista</h3>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting.
-            Lorem Ipsum is simply dummy text of the printing and typesetting.
-            Lorem Ipsum is simply dummy text of the printing and typesetting.
+            Na hora de realizar uma obra ou manutenção na sua residência ou
+            imóvel evite os riscos desnecessários, deixe o trabalho elétrico por
+            minha conta
           </p>
         </div>
 
@@ -55,11 +58,12 @@ export default function About() {
               <BsLightningFill />
               Sobre
             </strong>
-            <h1>Lorem Ipsum Is Lorem Ipsum</h1>
-            <span>Lorem ipsum is simply</span>
+            <h1>Profissional qualificado</h1>
+
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              Ipsum is simply dummy text of the printing and typesetting.
+              Eletrecista desde 2012, Estêfanio Thalles tem formação em Elétrica
+              Predial, NR10, Instalação de CFTV, Instalação de Central de
+              Incêndio, Instalação de Sistemas de Segurança.
             </p>
 
             <a href="#services" className="button">

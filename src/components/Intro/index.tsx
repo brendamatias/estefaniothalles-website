@@ -6,10 +6,10 @@ export default function Intro() {
     <Container>
       <div className="container">
         <span>Eletrecista</span>
-        <h1>Lorem ipsum is simply dummy text of.</h1>
+        <h1>Procurando um eletricista qualificado?</h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting.
-          understanding.
+          Prestando serviços em horários flexiveis para melhor atender ao
+          cliente. Atuando com agilidade, ótimo serviço e preço justo.
         </p>
 
         <a href="#services" className="button light">
