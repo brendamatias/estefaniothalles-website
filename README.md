@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Estefanio Thalles Logo" title="#estefaniothalles" src=".github/logo.svg" width="250px" />
+  <img alt="Estefanio Thalles Logo" src=".github/logo.svg" width="250px" />
 </h1>
 
 <div align="center">
@@ -16,7 +16,7 @@
 
 <br>
 
-<img alt="Aircnc" title="#aircnc" src=".github/presentation.jpg" width="100%" />
+<img alt="Estefanio Thalles Preview" src=".github/presentation.jpg" width="100%" />
 
 <div align="center">
   <a align="center" href="https://estefaniothalles.netlify.com/" alt="Estefanio Thalles Website">See the project</a>
