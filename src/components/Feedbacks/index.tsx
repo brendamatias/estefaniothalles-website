@@ -17,12 +17,12 @@ export default function Feedbacks() {
       text: 'Lorem ipusm is simply dummy text of the printing and typesetting and lorem is ipusm is simply dummy text of the printing and typesetting',
     },
     {
-      name: 'Juliana Teste',
+      name: 'Juliana Teste 2',
       role: 'Teste',
       text: 'Lorem ipusm is simply dummy text of the printing and typesetting and lorem is ipusm is simply dummy text of the printing and typesetting',
     },
     {
-      name: 'Juliana Teste',
+      name: 'Juliana Teste 3',
       role: 'Teste',
       text: 'Lorem ipusm is simply dummy text of the printing and typesetting and lorem is ipusm is simply dummy text of the printing and typesetting',
     },
@@ -49,7 +49,7 @@ export default function Feedbacks() {
         <div className="background" />
         <ul className="container" data-aos="zoom-in-up">
           {feedbacks.map(({ name, role, text }) => (
-            <li>
+            <li key={name}>
               <div>
                 <MdStar />
                 <MdStar />

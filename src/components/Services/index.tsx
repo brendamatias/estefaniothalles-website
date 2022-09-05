@@ -98,7 +98,7 @@ export default function Services() {
 
         <Cards>
           {cards.map(({ title, text, icon }) => (
-            <div data-aos="fade-up">
+            <div data-aos="fade-up" key={title}>
               <div className="card-icon">{icon}</div>
               <div>
                 <strong>{title}</strong>

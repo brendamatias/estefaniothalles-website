@@ -9,6 +9,7 @@ import Services from '../components/Services';
 import GlobalStyle from '../styles/global';
 import '@fontsource/roboto';
 import 'aos/dist/aos.css';
+import SEO from '../components/SEO';
 
 export default function IndexPage() {
   React.useEffect(() => {
@@ -16,7 +17,7 @@ export default function IndexPage() {
   }, []);
 
   return (
-    <main>
+    <div>
       <Header />
       <Intro />
       <About />
@@ -25,6 +26,10 @@ export default function IndexPage() {
       <Feedbacks />
       <Footer />
       <GlobalStyle />
-    </main>
+    </div>
   );
+}
+
+export function Head() {
+  return <SEO />;
 }
