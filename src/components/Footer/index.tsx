@@ -43,7 +43,9 @@ export default function Footer() {
 
                 <ul>
                   <li>estefaniothalles@gmail.com</li>
-                  <li>+55 31 99350-0702</li>
+                  <li>
+                    <a href="tel:+5531993500702">+55 31 99350-0702</a>
+                  </li>
                 </ul>
               </div>
 

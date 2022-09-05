@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { BsLightningFill } from 'react-icons/bs';
 import { FaBuilding, FaHome, FaShoppingCart } from 'react-icons/fa';
-import aboutSrc from '../../assets/images/about-image.png';
-
+import { StaticImage } from 'gatsby-plugin-image';
 import { Container, Cards, Content } from './styles';
 
 export default function About() {
@@ -51,7 +50,7 @@ export default function About() {
         </div>
 
         <Content data-aos="fade-up">
-          <img src={aboutSrc} alt="Sobre" />
+          <StaticImage src="../../assets/images/about-image.png" alt="Sobre" />
 
           <div>
             <strong className="title-section">
